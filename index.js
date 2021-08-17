@@ -339,7 +339,7 @@ module.exports = lolikiller = async (lolikiller, kill) => {
         if (!kill.key.fromMe && !isOwner && banChats === true) return
 switch (command) {
 case 'tes':
-fakegroup(`OK ✓`)
+fakegroup(`OKE ✓`)
 break
     case 'jadibot':
     if(kill.key.fromMe) return reply('Error!')
