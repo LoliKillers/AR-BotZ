@@ -1,0 +1,19 @@
+{
+  "name": "AR BOTZ",
+  "description": "bot whatsapp untuk bersenang senang",
+  "repository": "https://github.com/LoliKillers/ARBOTZ",
+  "logo": "https://telegra.ph/file/96ccad5945c18944c5f15.png",
+  "keywords": [
+    "whatsapp-bot",
+    "ar_botz",
+    "loli_killers",
+    "whatsapp"
+  ],
+  "stack": "container",
+  "env": {
+    "DEFAULT_TR_LANG": {
+      "description": "Default bahasa",
+      "value": "id"
+      }
+   }
+}
