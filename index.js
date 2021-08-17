@@ -501,9 +501,9 @@ break
                         ini_txt += `Pagi : ${x.Pagi}\n`
                         ini_txt += `Sing : ${x.Sing}\n`
                         ini_txt += `Malam : ${x.Malam}\n`
-                        ini_txt += `Dini Hari: ${x.Dini Hari}\n`
+                        ini_txt += `Dini Hari: ${x.Dini_Hari}\n`
                         ini_txt += `Suhu: ${x.Suhu}\n`
-                        ini_txt += `Kelembaban: ${x.kelembaban}
+                        ini_txt += `Kelembaban: ${x.kelembaban}`
                     }
                     fakegroup(ini_txt)
                     break
