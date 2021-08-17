@@ -474,6 +474,9 @@ break
 - ${prefix}blocklist
 - ${prefix}cekchat
 
+➠ *ARNZ API MENU*
+- ${prefix}infocuaca
+
 ➠ *THANKS TO*
 - ALLAH SWT
 - LOLI KILLERS
@@ -487,6 +490,23 @@ break
 `
         	fakestatus(menu)
            	break
+                case 'infocuaca':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} jawa timur`)
+                    provinsi = args.join(" ")
+                    get_result = await fetchJson(`https://arnz-api-production.up.railway.app/api/infocuaca?provinsi=${provinsi}`)
+                    get_result = get_result.result
+                    ini_txt = " Info Cuaca Provinsi ${provinsi} \n"
+                    for (var x of get_result) {
+                        ini_txt += `Kota : ${x.Kota}\n`
+                        ini_txt += `Pagi : ${x.Pagi}\n`
+                        ini_txt += `Sing : ${x.Sing}\n`
+                        ini_txt += `Malam : ${x.Malam}\n`
+                        ini_txt += `Dini Hari: ${x.Dini Hari}\n`
+                        ini_txt += `Suhu: ${x.Suhu}\n`
+                        ini_txt += `Kelembaban: ${x.kelembaban}
+                    }
+                    fakegroup(ini_txt)
+                    break
 case 'tovn':
 		 	  if ((isMedia && !kill.message.videoMessage || isQuotedImage) && args.length == 0) {
 			  const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(kill).replace('quotedM','m')).message.extendedTextMessage.contextInfo : kill
