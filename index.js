@@ -513,14 +513,14 @@ case 'jooxsearch':
                     provinsi = args.join(" ")
                     get_result = await fetchJson(`https://arnz-api.herokuapp.com/api/infocuaca?provinsi=${provinsi}`)
                     get_result = get_result.result
-                    ini_txt = " Info Cuaca Provinsi ${args.join} \n"
+                    ini_txt = " Info Cuaca Provinsi ${args.[0]} \n"
                     for (var x of get_result) {
                         ini_txt += `Kota : ${x.Kota}\n`
                         ini_txt += `Pagi : ${x.Pagi}\n`
                         ini_txt += `Sing : ${x.Sing}\n`
                         ini_txt += `Malam : ${x.Malam}\n`
                         ini_txt += `Suhu: ${x.Suhu}\n`
-                        ini_txt += `Kelembaban: ${x.kelembaban}\n`
+                        ini_txt += `Kelembaban: ${x.kelembaban}\n\n`
                     }
                     fakegroup(ini_txt)
                     break
