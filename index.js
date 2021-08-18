@@ -476,6 +476,7 @@ break
 
 ➠ *ARNZ API MENU*
 - ${prefix}jooxsearch
+- ${prefix}githubstalk
 
 ➠ *THANKS TO*
 - ALLAH SWT
@@ -490,6 +491,31 @@ break
 `
         	fakestatus(menu)
            	break
+case 'githubstalk':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} LoliKillers`)
+                    username = args[0]
+                    ini_result = await fetchJson(`https://arnz-api.herokuapp.com/api/github/stalk?username=${username}`)
+                    ini_result = ini_result.result
+                    ini_buffer = await getBuffer(ini_result.avatar_url)
+                    ini_txt = `Name : ${ini_result.name}\n`
+                    ini_txt += `Id : ${ini_result.id}\n`
+                    ini_txt += `Link : ${ini_result.url}\n`
+                    ini_txt += `Type : ${ini_result.type}\n`
+                    ini_txt += `Site Admin : ${ini_result.site_admin}\n`
+                    ini_txt += `Company : ${ini_result.company}\n`
+                    ini_txt += `Blog : ${ini_result.blog}\n`
+                    ini_txt += `Location : ${ini_result.location}\n`
+                    ini_txt += `Email : ${ini_result.email}\n`
+                    ini_txt += `Hireable : $ini_result.hireable}\n`
+                    ini_txt += `Bio : ${ini_result.bio}\n`
+                    ini_txt += `Public Repo : ${ini_result.public_repos}\n`
+                    ini_txt += `Public Gists : ${ini_result.public_gists}\n`
+                    ini_txt += `Followers : ${ini_result.followers}\n`
+                    ini_txt += `Following : ${ini_result.following}\n`
+                    ini_txt += `Created At : ${ini_result.created_at}\n`
+                    ini_txt += `Update At : ${ini_result.updated_at}`
+                    lolikiller.sendMessage(from, ini_buffer, image, { caption: ini_txt })
+                    break
 case 'jooxsearch':
                     if (args.length == 0) return reply(`Example: ${prefix + command} jawa timur`)
                     judul = args.join(" ")
