@@ -476,6 +476,7 @@ break
 
 ➠ *ARNZ API MENU*
 - ${prefix}infocuaca
+- ${prefix}jooxsearch
 
 ➠ *THANKS TO*
 - ALLAH SWT
@@ -490,20 +491,36 @@ break
 `
         	fakestatus(menu)
            	break
+case 'jooxsearch':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} jawa timur`)
+                    judul = args.join(" ")
+                    get_result = await fetchJson(`https://arnz-api.herokuapp.com/api/joox/search?q=${judul}`)
+                    get_result = get_result.result.songs
+                    ini_txt = " Hasil pencarian ${args.join}\n"
+                    for (var x of get_result) {
+                        ini_txt += `Id : ${x.id}\n`
+                        ini_txt += `Singer Id: ${x.singerId}\n`
+                        ini_txt += `Singer Name : ${x.singerName}\n`
+                        ini_txt += `Title : ${x.title}\n`
+                        ini_txt += `Album Id: ${x.albumId}\n`
+                        ini_txt += `Album Name: ${x.albumName}\n`
+                        ini_txt += `Duration: ${x.duration}\n`
+                    }
+                    fakegroup(ini_txt)
+                    break
                 case 'infocuaca':
                     if (args.length == 0) return reply(`Example: ${prefix + command} jawa timur`)
                     provinsi = args.join(" ")
                     get_result = await fetchJson(`https://arnz-api-production.up.railway.app/api/infocuaca?provinsi=${provinsi}`)
                     get_result = get_result.result
-                    ini_txt = " Info Cuaca Provinsi ${provinsi} \n"
+                    ini_txt = " Info Cuaca Provinsi ${args.join} \n"
                     for (var x of get_result) {
                         ini_txt += `Kota : ${x.Kota}\n`
                         ini_txt += `Pagi : ${x.Pagi}\n`
                         ini_txt += `Sing : ${x.Sing}\n`
                         ini_txt += `Malam : ${x.Malam}\n`
-                        ini_txt += `Dini Hari: ${x.Dini_Hari}\n`
                         ini_txt += `Suhu: ${x.Suhu}\n`
-                        ini_txt += `Kelembaban: ${x.kelembaban}`
+                        ini_txt += `Kelembaban: ${x.kelembaban}\n`
                     }
                     fakegroup(ini_txt)
                     break
