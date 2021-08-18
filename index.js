@@ -511,7 +511,7 @@ case 'jooxsearch':
                 case 'infocuaca':
                     if (args.length == 0) return reply(`Example: ${prefix + command} jawa timur`)
                     provinsi = args.join(" ")
-                    get_result = await fetchJson(`https://arnz-api-production.up.railway.app/api/infocuaca?provinsi=${provinsi}`)
+                    get_result = await fetchJson(`https://arnz-api.herokuapp.com/api/infocuaca?provinsi=${provinsi}`)
                     get_result = get_result.result
                     ini_txt = " Info Cuaca Provinsi ${args.join} \n"
                     for (var x of get_result) {
