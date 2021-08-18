@@ -475,7 +475,6 @@ break
 - ${prefix}cekchat
 
 ➠ *ARNZ API MENU*
-- ${prefix}infocuaca
 - ${prefix}jooxsearch
 
 ➠ *THANKS TO*
@@ -496,23 +495,16 @@ case 'jooxsearch':
                     judul = args.join(" ")
                     get_result = await fetchJson(`https://arnz-api.herokuapp.com/api/joox/search?q=${judul}`)
                     get_result = get_result.result.songs
-                    ini_txt = " Hasil pencarian ${args.join}\n"
+                    ini_txt = `Hasil pencarian ${args.join}\n\n`
                     for (var x of get_result) {
-                        ini_txt += `Id : ${x.id}\n`
-                        ini_txt += `Singer Id: ${x.singerId}\n`
-                        ini_txt += `Singer Name : ${x.singerName}\n`
-                        ini_txt += `Title : ${x.title}\n`
-                        ini_txt += `Album Id: ${x.albumId}\n`
-                        ini_txt += `Album Name: ${x.albumName}\n`
-                        ini_txt += `Duration: ${x.duration}\n`
+                        ini_txt += `*Id :* ${x.id}\n`
+                        ini_txt += `*Singer Id:* ${x.singerId}\n`
+                        ini_txt += `*Singer Name :* ${x.singerName}\n`
+                        ini_txt += `*Title :* ${x.title}\n`
+                        ini_txt += `*Album Id:* ${x.albumId}\n`
+                        ini_txt += `*Album Name:* ${x.albumName}\n`
+                        ini_txt += `*Duration:* ${x.duration}\n\n`
                     }
-                    fakegroup(ini_txt)
-                    break
-                case 'infocuaca':
-                    if (args.length == 0) return reply(`Example: ${prefix + command} jawa timur`)
-                    provinsi = args.join(" ")
-                    get_result = await fetchJson(`https://arnz-api.herokuapp.com/api/infocuaca?provinsi=${provinsi}`)
-                    ini_txt = `${get_result.result}`
                     fakegroup(ini_txt)
                     break
 case 'tovn':
