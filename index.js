@@ -495,7 +495,7 @@ case 'jooxsearch':
                     judul = args.join(" ")
                     get_result = await fetchJson(`https://arnz-api.herokuapp.com/api/joox/search?q=${judul}`)
                     get_result = get_result.result.songs
-                    ini_txt = `Hasil pencarian ${args.join}\n\n`
+                    ini_txt = `Hasil pencarian ${args.join("")}\n\n`
                     for (var x of get_result) {
                         ini_txt += `*Id :* ${x.id}\n`
                         ini_txt += `*Singer Id:* ${x.singerId}\n`
