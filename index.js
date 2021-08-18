@@ -511,9 +511,16 @@ case 'jooxsearch':
                 case 'infocuaca':
                     if (args.length == 0) return reply(`Example: ${prefix + command} jawa timur`)
                     provinsi = args.join(" ")
-                    get_result = await fetchJson(`https://arnz-api.herokuapp.com/api/infocuaca?provinsi=${provinsi}`)
-                    ini_txt = get_result.result
-                    fakegroup(ini_txt)
+                    await fetchJson(`https://arnz-api.herokuapp.com/api/infocuaca?provinsi=${provinsi}`)
+                            .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 result
+             })
+         })
+lolikiller.sendMessage(from, result, text,{quoted: kill})
+
                     break
 case 'tovn':
 		 	  if ((isMedia && !kill.message.videoMessage || isQuotedImage) && args.length == 0) {
