@@ -1,22 +1,24 @@
 <div align="center">
-<img src="https://telegra.ph/file/9d74c8ff80bb0b1b8f7a5.jpg" alt="ARBOTZ" width="300" />
+<img src="https://telegra.ph/file/9d74c8ff80bb0b1b8f7a5.jpg" alt="ARI" width="300" />
 
-![ARBOTZ](https://socialify.git.ci/LoliKillers/ARBOTZ/image?description=1&font=Source%20Code%20Pro&forks=1&language=1&owner=1&pattern=Floating%20Cogs&stargazers=1&theme=Dark) <br>
+![ARI](https://socialify.git.ci/LoliKillers/api-samehadaku/image?description=1&font=Source%20Code%20Pro&forks=1&language=1&owner=1&pattern=Floating%20Cogs&stargazers=1&theme=Dark) <br>
 
 <p align="center">
 <a href="https://t.me/Loli_Killers" alt="Telegram!"> <img src="https://aleen42.github.io/badges/src/telegram.svg" /> </a>
 <a href="https://wa.me/6285852203076" alt="Whatsapp!"> <img src="https://aleen42.github.io/badges/src/whatsapp.svg" /> </a>
-<a href="https://github.com/LoliKillers/ARBOTZ/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" /> </a>
+<a href="https://github.com/LoliKillers/api-samehadaku/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" /> </a>
 </p>
 <p align="center">
-<a href="https://github.com/LoliKillers/ARBOTZ" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/LoliKillers/ARBOTZ?style=flat&logo=github&color=success" /> </a>
-<a href="https://github.com/LoliKillers/ARBOTZ" alt="GitHub commit activity"> <img src="https://img.shields.io/github/commit-activity/m/LoliKillers/ARBOTZ" /> </a>
-<a href="https://github.com/LoliKillers/ARBOTZ/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/LoliKillers/ARBOTZ?style=flat&logo=github" /> </a>
-<a href="https://github.com/LoliKillers/ARBOTZ/network/members" alt="GitHub forks"> <img src="https://img.shields.io/github/forks/LoliKillers/ARBOTZ?label=Forks&logo=github" /> </a>
-<a href="https://github.com/LoliKillers/ARBOTZ" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/LoliKillers/ARBOTZ?color=success" /> </a>
-<a href="https://github.com/LoliKillers/ARBOTZ" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-raw/LoliKillers/ARBOTZ?style=flat&logo=github&color=yellow" /> </a>
+<a href="https://github.com/LoliKillers/api-samehadaku" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/LoliKillers/api-samehadaku?style=flat&logo=github&color=success" /> </a>
+<a href="https://github.com/LoliKillers/api-samehadaku" alt="GitHub commit activity"> <img src="https://img.shields.io/github/commit-activity/m/LoliKillers/api-samehadaku" /> </a>
+<a href="https://github.com/LoliKillers/api-samehadaku/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/LoliKillers/api-samehadaku?style=flat&logo=github" /> </a>
+<a href="https://github.com/LoliKillers/api-samehadaku/network/members" alt="GitHub forks"> <img src="https://img.shields.io/github/forks/LoliKillers/api-samehadaku?label=Forks&logo=github" /> </a>
+<a href="https://github.com/LoliKillers/api-samehadaku" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/LoliKillers/api-samehadaku?color=success" /> </a>
+<a href="https://github.com/LoliKillers/api-samehadaku" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-raw/LoliKillers/api-samehadaku?style=flat&logo=github&color=yellow" /> </a>
 </p>
-# AR BOTZ
+</div>
+
+# API SAMEHADAKU
 
 >
 >
@@ -28,187 +30,80 @@
 </h4>
 </p>
 
-## HOSTING DI TERMUX
+SRA adalah rest-api yang mengarah ke [samehadaku](https://samehadaku.vip) website yang saya dibuat menggunakan Express.
+
+## Contoh
+Contoh rest api [Samehadaku](https://samehadaku-rest-api.herokuapp.com/) yang sudah saya buat
+
+## Installation
+
+Download dan install terlebih dahulu package [npm](https://npmjs.com/)
+
+* Clone repo ini terlebih dahulu
+* Install semua packagae/module yang akan di gunakan
 ```bash
-$ pkg update && pkg upgrade
-$ pkg install nodejs && pkg install git && pkg install tesseract
-$ git clone https://github.com/LoliKillers/ARBOTZ
-$ cd ARBOTZ
-$ bash install.sh
-$ npm start/node main.js
+npm install
 ```
 
-## HOSTING DI LAPTOP/PC
-DOWNLOAD DAN INSTALL
-* [Node.js](https://nodejs.org/en/)
-* [Git](https://git-scm.com/downloads)
-* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
-* [Libwebp](https://developers.google.com/speed/webp/download)
+## Usage
+
+Untuk memulai server, ketik perintah dibawah melalui CMD:
 ```bash
-$ git clone https://github.com/LoliKillers/ARBOTZ
-$ cd ARBOTZ
-$ npm i
-$ npm start/node main.js
+npm start
+```
+Atau
+```bash
+npm run nodemon
+```
+Dan buka tauatan [localhost:3000](http://localhost:3000/)
+
+## Endpoint
+
+| Url        | Params           | Type | Keterangan |
+| ------------- |:-------------:| :-----:|  :-----|
+| /      | - | - | beranda  
+| /page/{page}    | page     |  angka | halaman beranda |
+| /blog   | -     |  - | blog |
+| /blog/{page}   | page     |  angka | halaman blog |
+| /blog/read/{id}   | id     |  String | baca blog |
+| /anime/{id}   | id     |  String | detail anime |
+| /anime/eps/{link}   | link     |  String | detail episode anime |
+| /search/{title}/{page}   | judul, halaman     |  String, angka | cari anime |
+| /season | -     |  - | daftar season dari anime |
+| /date-release | -     |  - | tanggal rilis anime |
+| /list-anime/{page} | page     |  angka | daftar dari semua anime |
+| /blog-category/{category}/{page} | kategori, halaman     |  String, angka | daftar item dari halaman |
+| /tag/{tag} | tag   |  String | daftar item dari tag |
+| /daftar-genre | -   |  String | daftar genre|
+| /genre/{id} | id   |  String | menampilkan anime dari genre |
+
+
+## Sample response
+
+Titik akhir api : https://samehadaku-rest-api.herokuapp.com/
+```json
+{
+    title: "Re:Zero kara Hajimeru Isekai Seikatsu Season 2",
+    status: "Ongoing",
+    link: "https://samehadaku.vip/anime/rezero-kara-hajimeru-isekai-seikatsu-season-2/",
+    linkId: "rezero-kara-hajimeru-isekai-seikatsu-season-2",
+    image: "https://i0.wp.com/samehadaku.vip/wp-content/uploads/2020/07/108005.jpg?quality=90&resize=150,210",
+    rating: "8.79",
+    sinopsis: "Musim Kedua dari Serial Re:Zero kara Hajimeru Isekai Seikatsu.",
+    genre: [
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Thriller"
+    ]
+},
 ```
 
-## HOSTING DI RAILWAY
-* Hapus session.json dan ganti dengan session kamu atau scan di railway
+## Contributing
+ Permintaan tarik dipersilakan. Untuk perubahan besar, silakan buka masalah terlebih dahulu untuk mendiskusikan apa yang ingin Anda ubah.
 
-[![Deploy+on+Railway](https://railway.app/button.svg)](<https://railway.app/new/template?template=https://github.com/LoliKillers/ARBOTZ>)<br>
+Pastikan untuk memperbarui tes yang sesuai.
 
-## HOSTING DI HEROKU
-* Anda harus menghapus session.json dan menggantinya dengan session milik anda!!!
-
-[![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg "Deploy with Heroku")](https://heroku.com/deploy?template=https://github.com/LoliKillers/ARBOTZ "Deploy with Heroku")<br>
-
-* Jangan lupa add ons di nyalain, tenang aja gratis!!
-
-## HOSTING DI GOOGLE CLOUD 
-* Hapus file session.json dan ganti dengan session anda, atau scan di CMD google cloud shell
-* Pergi ke <a href="https://console.cloud.google.com/home/dashboard?cloudshell=true" alt="Cloud Shell"> <img src="https://img.shields.io/badge/%F0%9F%96%A5%EF%B8%8F-CloudShell-blue" /> </a> 
-* Ketikkan perintah diwabah bada CMD google cloud shell
-```bash
-$ sudo apt-get update && sudo apt-get upgrade
-$ sudo apt-get install git nodejs ffmpeg tesseract-ocr -y
-$ git clone https://github.com/LoliKillers/ARBOTZ to
-$ cd ARBOTZ
-$ npm install
-$ npm start/node main.js
-```
-
-
-# FITUR
-
-| OWNER MENU |✅|
-| ------------- | ------------- |
-| OFF |✅|
-| ON |✅|
-| STATUS |✅|
-| SELF |✅|
-| PUBLIC |✅|
-| UPLOAD SW VIDEO |✅|
-| UPLOAD SW GAMBAR |✅|
-| UPLOAD SW TEKS |✅|
-| SET THUMBNAIL |✅|
-| SET TARGET |✅|
-| SET FAKE IMAGE |✅|
-| SET FAKE REPLY |✅|
-| TERMINAL |✅|
-| BROADCAST GROUP |✅|
-| BROADCAST ALL |✅|
-| BLOCK |✅|
-| UNBLOCK |✅|
-| SETT PHOTO PROFIL|✅|
-
-| MAKER MENU |✅|
-| ------------- | ------------- |
-| IMAGE TO STICKER |✅|
-| VIDEO TO STICKER GIF |✅|
-| IMAGE TO STICKER WM |✅|
-| TAKE STICKER |✅|
-| FAKE DEFACE |✅|
-| EMOJI TO STICKER|✅|
-
-| CONVERT MENU |✅|
-| ------------- | ------------- |
-| STICKER TO IMAGE |✅|
-| VIDEO TO MP3 |✅|
-| STICKER GIF TO MP4 |✅|
-| VIDEO SLOW |✅|
-| VIDEO FAST |✅|
-| VIDEO REVERSE |✅|
-| IMAGE TO URL |✅|
-| TEXT TO SPEACH |✅|
-| VN BASS |✅|
-| VN SLOW MOTION |✅|
-| VN TUPAI |✅|
-| VN GEMOK |✅|
-
-| FUN MENU |✅|
-| ------------- | ------------- |
-| FITNAH |✅|
-| FITNAH PC |✅|
-| KONTAK |✅|
-| CAK LONTONG |✅|
-| HILIH |✅|
-| APAKAH |✅|
-| KAPANKAH |✅|
-| BISAKAH |✅|
-
-| GROUP MENU |✅|
-| ------------- | ------------- |
-| STICKTAG |✅|
-| HIDETAG |✅|
-| KONTAG |✅|
-| TOTAG |✅|
-| TAGALL |✅|
-| PROMOTE |✅|
-| DEMOTE |✅|
-| LIST ONLINE |✅|
-| SET NAMA GROUP |✅|
-| SET DESKRIPSI GROUP |✅|
-| GROUP CLOSE TIME |✅|
-| GROUP OPEN TIME |✅|
-| GROUP CLOSE |✅|
-| GROUP OPEN |✅|
-| LEAVE TIME |✅|
-| LEAVE |✅|
-| LINK GROUP |✅|
-| LIST ADMIN |✅|
-| KICK |✅|
-| INFOALL |✅|
-| NOTIF |✅|
-| DISAPERING ON |✅|
-| DISAPERING OFF |✅|
-
-| DOWNLOAD MENU |✅|
-| ------------- | ------------- |
-| YOUTUBE SEARCH |✅|
-| INSTAGRAM STALK |✅|
-| PLAY YOUTUBE|✅|
-| VIDEO |✅|
-| YOUTUBE MP3 |✅|
-| YOUTUBE MP4 |✅|
-| INSRAGRAM STORY |✅|
-| IINSTAGRAM DOWNLOADER |✅|
-| FACEBOOK DOWNLOADER |✅|
-| TIKTOK DOWNLOADER |✅|
-| TIKTOK AUDIO |✅|
-| TWITTER |✅|
-| BRAINLY |✅|
-| IMAGE |✅|
-| ANIME |✅|
-| PINTEREST |✅|
-| KOMIKU |✅|
-| LIRIK |✅|
-| CHARA |✅|
-| PLAYSTORE |✅|
-| OTAKU |✅|
-
-| OTHER MENU |✅|
-| ------------- | ------------- |
-| PING |✅|
-| INSPECT |✅|
-| JOIN |✅|
-| CARI PESAN |✅|
-| GET |✅|
-| JADI BOT |✅|
-| STOP JADIBOT |✅|
-| LIST BOT |✅|
-| INFO |✅|
-| DELETE |✅|
-| CEK CHAT |✅|
-| BLOCK LIST |✅|
-
-## Kredit 🍭
-* Yah, itu semua ada dalam sejarah komit Jangan ragu untuk membuka permintaan tarik jika ada yang error.
-
-* Bot Link:  <a href="https://wa.me/6285785445365" alt="AR BotZ"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-ARBOTZ-green" /> </a>
-
-## THANKS TO
-* [`Baileys`](https://github.com/adiwajshing/Baileys)
-* [`MhankBarBar`](https://github.com/MhankBarBar)
-* [`MRHRTZ`](https://github.com/MRHRTZ)
-* [`HEXAGONZ`](https://github.com/Hexagonz)
-  
-  
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+Copyright (c) 2020-present
