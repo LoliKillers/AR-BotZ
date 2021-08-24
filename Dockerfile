@@ -4,7 +4,7 @@ RUN apt update
 RUN apt install ffmpeg -y
 RUN apt install tesseract-ocr -y
 RUN apt install nmap -y
-RUN apt install tcpdump -y
+RUN apt install figlet -y
 
 WORKDIR /app
 COPY . /app
